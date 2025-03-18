@@ -16,7 +16,7 @@ on:
         type: string
 
       bundle_id:
-        description: "BundleID (Optional)"
+        description: "BundleID"
         default: "com.google.ios.youtubemusic"
         required: true
         type: string
@@ -60,7 +60,7 @@ jobs:
 
       - name: Cache Theos
         id: theos
-        uses: actions/cache@v4.0.2
+        uses: actions/cache@v4.2.2
         env:
           cache-name: theos_cache_67db2ab
         with:
